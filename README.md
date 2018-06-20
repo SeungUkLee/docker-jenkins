@@ -1,6 +1,9 @@
 # Docker Jenkins
 This is jenkins customizing [jenkins/jenkins:lts](https://hub.docker.com/r/jenkins/jenkins/).
-this is installed **docker-compose** and **docker client**. So you can run jenkins pipeline which uses docker-compose or docker. 
+
+This is installed **docker-compose** and **docker client**. 
+
+So you can run jenkins pipeline which uses docker-compose or docker. 
 
 Example:
 ```
@@ -31,4 +34,9 @@ node {
 
 To run the container, do the following:
 
-`docker run -p 8080:8080 -p 50000:50000 --name jenkins -v \ jenkins_home:/var/jenkins_home -v /var/run/docker.sock:/var/run/docker.sock \ seunguklee/docker-jenkins`
+```
+docker run -p 8080:8080 -p 50000:50000 --name jenkins \
+-v jenkins_home:/var/jenkins_home \
+-v /var/run/docker.sock:/var/run/docker.sock \
+seunguklee/docker-jenkins
+```
