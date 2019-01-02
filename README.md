@@ -1,4 +1,6 @@
-# Docker Jenkins
+# :whale: Docker Jenkins
+ 
+Jenkins CI with docker 
 
 This is jenkins customizing [jenkins/jenkins:lts](https://hub.docker.com/r/jenkins/jenkins/).
 
